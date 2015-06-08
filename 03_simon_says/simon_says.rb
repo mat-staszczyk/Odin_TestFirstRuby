@@ -21,7 +21,8 @@ def first_word (text)
 end
 
 def titleize (text)
-	p = text.split.collect! { |x| (x == "and" || x == "a" || x == "an" || x == "from" || x == "over" || x == "the" ) ? x : x.capitalize }
+  exceptions = ["and", "a", "an", "from", "over", "the"]
+  p = text.split.collect! { |x| exceptions.include?(x) ? x : x.capitalize }
 	p.first.capitalize!
 	p.join(" ")
 end
