@@ -36,5 +36,4 @@ def translate (subject)
   end
 
   new_arr.join(" ")
-
 end
