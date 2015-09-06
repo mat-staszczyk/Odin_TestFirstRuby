@@ -1,8 +1,7 @@
-def	ftoc(temp)
-	temp = (temp - 32)/1.8
-	temp.ceil
+def ftoc (f)
+  (f - 32) * (5.0/9.0)
 end
 
-def ctof(temp)
-	temp = temp*1.8+32
+def ctof (c)
+  c * 1.8 + 32
 end
