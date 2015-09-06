@@ -11,9 +11,7 @@ def sum (nums)
 end
 
 def multiply (*nums)
-  result = 1
-  nums.each { |x| result *= x }
-  result
+  nums.inject(1) { |result, x| result *= x }
 end
 
 def power (base, power)
