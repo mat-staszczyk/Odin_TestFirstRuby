@@ -1,37 +1,29 @@
 def add (a, b)
-	a + b
+  a + b
 end
 
 def subtract (a, b)
-	a - b
+  a - b
 end
 
-def sum (arr)
-	sum = 0 
-	arr.each { |a| sum+=a }
-	sum
+def sum (nums)
+  nums.inject(0) { |sum, x| sum += x } 
 end
 
-def multiply (arr)
-	result = 1 
-	arr.each { |a| result *= a }
-	result
+def multiply (*nums)
+  result = 1
+  nums.each { |x| result *= x }
+  result
 end
 
-def power (a, b)
-	b -= 1
-	b.times do
-		a *= a
-	end
-	a
+def power (base, power)
+  base ** power
 end
 
-def factorial (a)
-	results = 1
-	loop do 
-		break if a <= 1
-		results *= a
-		a -= 1
-	end
-	results
+def factorial (x)
+  if (x <= 1) then
+    1
+  else
+    x * factorial(x-1)
+  end
 end
