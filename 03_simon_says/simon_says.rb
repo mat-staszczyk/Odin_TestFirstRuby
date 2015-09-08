@@ -1,9 +1,9 @@
-def echo (text)
-	"#{text}"
+def echo (word)
+  "#{word}"
 end
 
-def shout (text)
-	"#{text.upcase}"
+def shout (word)
+  "#{word.upcase}"
 end
 
 def repeat (text, r=2)
