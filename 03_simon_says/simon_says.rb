@@ -6,14 +6,12 @@ def shout (word)
   "#{word.upcase}"
 end
 
-def repeat (text, r=2)
-	r -= 1			
-	"#{text}" + " #{text}"*r
+def repeat (word, times=2)
+  ([word]*times).join(" ")
 end
 
-def start_of_word (text, i)
-	text = text[0...i]
-	"#{text}"
+def start_of_word (word, x)
+  word[0, x]
 end
 
 def first_word (text)
