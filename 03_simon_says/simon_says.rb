@@ -14,13 +14,13 @@ def start_of_word (word, x)
   word[0, x]
 end
 
-def first_word (text)
-	text.split.first
+def first_word (string)
+  string.split.first
 end
 
-def titleize (text)
-  exceptions = ["and", "a", "an", "from", "over", "the"]
-  p = text.split.collect! { |x| exceptions.include?(x) ? x : x.capitalize }
-	p.first.capitalize!
-	p.join(" ")
+def titleize (string) 
+  forbidden = %w[and over the]
+  string = string.split.each { |word| word.capitalize! unless forbidden.include? word }
+  string.first.capitalize!
+  string.join(" ")
 end
