@@ -3,12 +3,12 @@ def translate (words)
   words.map do |word|
     if /^[aeiouy]/ === word then
       word << "ay"
-    elsif /^(squ|sch|thr)/ === word then
-      word << "#{word.slice!(0,3)}ay"
-    elsif /^(qu|ch|br|th)/ === word then
-      word << "#{word.slice!(0,2)}ay" 
+    elsif /^(qu|.qu)/ === word then
+      range = /^qu/ === word ? 2 : 3
+      word << "#{word.slice!(0...range)}ay"
     else
-      word << "#{word.slice!(0)}ay"
+      range = word.index(/[aeiouy]/)
+      word << "#{word.slice!(0...range)}ay"
     end
   end
   words.join(" ")
