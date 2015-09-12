@@ -75,8 +75,4 @@ describe "#translate" do
     s.should == "Evenay ifay youay inway, you'reay illstay aay atray."
   end
 
-  # Test-driving bonus:
-  # * write a test asserting that capitalized words are still capitalized (but with a different initial capital letter, of course)
-  # * retain the punctuation from the original phrase
-
 end
