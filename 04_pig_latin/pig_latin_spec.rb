@@ -65,14 +65,14 @@ describe "#translate" do
     s.should == "ethay ickquay ownbray oxfay"
   end
 
-  it "write a test asserting that capitalized words are still capitalized" do
-    s = translate("Speak Friend and Enter")
-    s.should == "Eakspay Iendfray anday Enteray"
-  end
-  
+  it "capitalized words are still capitalized" do
+    s = translate("True Friends Stab You in The Front")
+    s.should == "Uetray Iendsfray Abstay Youay inay Ethay Ontfray"
+  end 
+
   it "retain the punctuation from the original phrase" do
-    s = translate("I never doubted you! Wonderful!")
-    s.should == "Iay evernay oubtedday ouyay! Onderfulway!"
+    s = translate("Even if you win, you're still a rat.")
+    s.should == "Enevay ifay youay inway, you'reay illstay aay atray."
   end
 
   # Test-driving bonus:
