@@ -17,9 +17,9 @@ def translate (words)
     to_capitalize = true if word.capitalized? 
     stash = word.slice!(-1) if word.ends_with_punctuation?
 
-    if /^[aeiouy]/i === word then
+    if /^[aeiouy]/i === word 
       word << "ay"
-    elsif /qu|.qu/i === word then
+    elsif /qu|.qu/i === word
       range = /^qu/ === word ? 2 : 3
       word << "#{word.slice!(0...range)}ay" 
     else
