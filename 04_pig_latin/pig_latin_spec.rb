@@ -72,7 +72,7 @@ describe "#translate" do
 
   it "retain the punctuation from the original phrase" do
     s = translate("Even if you win, you're still a rat.")
-    s.should == "Enevay ifay youay inway, you'reay illstay aay atray."
+    s.should == "Evenay ifay youay inway, you'reay illstay aay atray."
   end
 
   # Test-driving bonus:
