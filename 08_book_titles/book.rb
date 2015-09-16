@@ -1,14 +1,13 @@
 class Book
-  attr_accessor :title
+  attr_reader :title
 
-  def title
-    title = @title
-    exceptions = ["and", "in", "the", "of", "a", "an"]
-    title = (title.split(/ /).each { |x| exceptions.include?(x) ? x : x.capitalize! })
-    title[0].capitalize!
-    @title = title.join(' ')
+  def title=(name)
+    forbidden = %w(the in of and a an)
+    words = name.split(' ')
+    words.first.capitalize!
+    words[1..-1].map do |word|
+      (forbidden.include? word) ? word : word.capitalize!
+    end
+    @title = words.join(' ')
   end
-
 end
-
-@book = Book.new
