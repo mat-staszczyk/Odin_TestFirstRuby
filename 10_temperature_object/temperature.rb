@@ -1,5 +1,13 @@
 class Temperature
 
+  def self.from_celsius (c)
+    new(:c => c)
+  end
+
+  def self.from_fahrenheit (f)
+    new(:f => f)
+  end
+
   def ftoc (f)
     (f - 32) * (5.0/9.0)
   end
