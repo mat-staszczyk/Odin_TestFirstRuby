@@ -35,3 +35,15 @@ class Temperature
   end
 
 end
+
+class Celsius < Temperature
+  def initialize (c)
+    super(c: c)
+  end
+end
+
+class Fahrenheit < Temperature
+  def initialize (f)
+    super(f: f)
+  end
+end
