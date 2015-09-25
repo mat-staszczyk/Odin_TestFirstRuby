@@ -12,4 +12,18 @@ class Dictionary
     entries.keys.map(&:to_s).sort
   end
 
+  def include? word
+    keywords.include? word
+  end
+
+  def find word
+    found = {} 
+    entries.each do |key, value|
+      if key =~ /^#{word}/
+        found[key] = value
+      end
+    end
+    found
+  end
+
 end
