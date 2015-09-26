@@ -26,4 +26,10 @@ class Dictionary
     found
   end
 
+  def printable
+    entries.map do |key, value|
+      %Q([#{key}] "#{value}")
+    end.sort.join("\n")
+  end
+
 end
