@@ -6,4 +6,12 @@ class RPNCalculator
   def push x
     @nums.push(x.to_f) 
   end
+
+  def value 
+    @nums[-1]
+  end
+
+  def plus 
+    @nums.push(pop + pop)
+  end
 end
