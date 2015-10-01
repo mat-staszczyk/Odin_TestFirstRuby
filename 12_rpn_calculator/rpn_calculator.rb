@@ -14,4 +14,9 @@ class RPNCalculator
   def plus 
     @nums.push(pop + pop)
   end
+
+  def minus
+    temp = pop
+    @nums.push(pop - temp)
+  end
 end
