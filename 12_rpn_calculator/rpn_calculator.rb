@@ -19,4 +19,9 @@ class RPNCalculator
     temp = pop
     @nums.push(pop - temp)
   end
+
+  def divide
+    temp = pop
+    @nums.push(pop / temp)
+  end
 end
