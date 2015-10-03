@@ -24,4 +24,8 @@ class RPNCalculator
     temp = pop
     @nums.push(pop / temp)
   end
+
+  def times
+    @nums.push(pop * pop)
+  end
 end
