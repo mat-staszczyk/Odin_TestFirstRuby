@@ -28,4 +28,15 @@ class RPNCalculator
   def times
     @nums.push(pop * pop)
   end
+
+  def pop
+    value = @nums.pop
+    raise "calculator is empty" if value.nil?
+    value
+  end
+
+  def tokens phrase
+
+  end 
+  
 end
