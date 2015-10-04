@@ -34,5 +34,9 @@ class RPNCalculator
     raise "calculator is empty" if value.nil?
     value
   end
+
+  def tokens phrase
+
+  end
   
 end
