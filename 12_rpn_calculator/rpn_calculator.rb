@@ -40,7 +40,7 @@ class RPNCalculator
       if element =~ /[0-9]+/ 
         element.to_i 
       else
-        
+        element.to_sym
       end
     end
   end
