@@ -36,7 +36,13 @@ class RPNCalculator
   end
 
   def tokens phrase
-
+    phrase.split.map do |element|
+      if element =~ /[0-9]+/ 
+        
+      else
+        
+      end
+    end
   end
   
 end
