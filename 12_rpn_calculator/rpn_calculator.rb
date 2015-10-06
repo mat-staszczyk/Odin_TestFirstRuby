@@ -1,4 +1,5 @@
 class RPNCalculator
+	
   def initialize 
     @nums = []  
   end
@@ -43,6 +44,10 @@ class RPNCalculator
         element.to_sym
       end
     end
+  end
+
+  def evaluate phrase
+
   end
   
 end
