@@ -47,7 +47,10 @@ class RPNCalculator
   end
 
   def evaluate phrase
+    tokens(phrase).each do |x|
 
+    end
+    value
   end
   
 end
