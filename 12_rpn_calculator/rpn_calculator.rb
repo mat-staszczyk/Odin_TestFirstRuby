@@ -48,7 +48,13 @@ class RPNCalculator
 
   def evaluate phrase
     tokens(phrase).each do |x|
-
+    	case x
+        when Integer then push x
+        when :+ then plus
+        when :- then minus
+        when :/ then divide
+        when :* then times 
+      end
     end
     value
   end
