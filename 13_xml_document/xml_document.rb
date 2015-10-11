@@ -5,4 +5,8 @@ class XmlDocument
     @level = 0
   end
 
+  def method_missing (method, *args, &block)
+    attrs = args[0] || {}
+  end
+
 end
