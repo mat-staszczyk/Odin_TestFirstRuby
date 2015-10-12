@@ -7,6 +7,7 @@ class XmlDocument
 
   def method_missing (method, *args, &block)
     attrs = args[0] || {}
+    xml = ""
   end
 
 end
