@@ -9,6 +9,7 @@ class XmlDocument
     attrs = args[0] || {}
     xml = ""
     xml << "  "*@level if @indent
+    xml << "<#{method}"
   end
 
 end
