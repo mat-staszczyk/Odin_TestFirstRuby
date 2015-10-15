@@ -10,6 +10,9 @@ class XmlDocument
     xml = ""
     xml << "  "*@level if @indent
     xml << "<#{method}"
+    attrs.each_pair do |key, value|
+      
+    end
   end
 
 end
