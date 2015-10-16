@@ -11,7 +11,7 @@ class XmlDocument
     xml << "  "*@level if @indent
     xml << "<#{method}"
     attrs.each_pair do |key, value|
-      
+      xml << " #{key}='#{value}'"
     end
   end
 
