@@ -13,6 +13,9 @@ class XmlDocument
     attrs.each_pair do |key, value|
       xml << " #{key}='#{value}'"
     end
+    if block_given?
+
+    end
   end
 
 end
