@@ -14,7 +14,7 @@ class XmlDocument
       xml << " #{key}='#{value}'"
     end
     if block_given?
-
+			xml << ">"
     end
   end
 
