@@ -15,6 +15,7 @@ class XmlDocument
     end
     if block_given?
 			xml << ">"
+			xml << "\n" if @indent
     end
   end
 
