@@ -17,6 +17,7 @@ class XmlDocument
 			xml << ">"
 			xml << "\n" if @indent
 			@level+=1
+			xml << yield
     end
   end
 
