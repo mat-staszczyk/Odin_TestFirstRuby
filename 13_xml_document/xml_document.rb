@@ -18,6 +18,7 @@ class XmlDocument
 			xml << "\n" if @indent
 			@level+=1
 			xml << yield
+			@level-=1
     end
   end
 
