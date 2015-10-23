@@ -19,6 +19,7 @@ class XmlDocument
 			@level+=1
 			xml << yield
 			@level-=1
+			xml << "  "*@level if @indent
     end
   end
 
