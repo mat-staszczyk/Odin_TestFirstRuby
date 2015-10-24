@@ -20,6 +20,7 @@ class XmlDocument
 			xml << yield
 			@level-=1
 			xml << "  "*@level if @indent
+			xml << "</#{method}>"
     end
   end
 
