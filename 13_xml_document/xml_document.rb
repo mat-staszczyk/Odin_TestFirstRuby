@@ -22,6 +22,7 @@ class XmlDocument
 			xml << "  "*@level if @indent
 			xml << "</#{method}>"
 			xml << "\n" if @indent
+		else
     end
   end
 
