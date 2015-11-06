@@ -26,6 +26,7 @@ class XmlDocument
 			xml << "/>"
 			xml << "\n" if @indent
     end
+    xml
   end
 
 end
