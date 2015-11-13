@@ -4,4 +4,8 @@ class Array
 		self.each { |x| result += x }
 		result
 	end
+
+	def square
+
+	end
 end
