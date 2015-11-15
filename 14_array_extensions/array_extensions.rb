@@ -8,4 +8,7 @@ class Array
 	def square
 		map { |x| x*x }
 	end
+
+	def square!
+  end
 end
