@@ -10,5 +10,6 @@ class Array
 	end
 
 	def square!
+		map! { |x| x*x }
   end
 end
