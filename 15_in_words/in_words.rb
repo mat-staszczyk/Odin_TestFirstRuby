@@ -12,6 +12,9 @@ module Inwords
     teens = %w[ ten eleven twelve ].to_a
     prefix = %w[ nil nil twen thir four fif six seven
     						 eigh nine ].to_a
+
+    num = self.to_s
+
   end
 
   def more_digits
