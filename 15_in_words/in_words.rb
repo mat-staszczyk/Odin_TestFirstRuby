@@ -32,6 +32,10 @@ module Inwords
   end
 
   def more_digits
+    
+    s = to_s
+    result = ""
+    temp = s.slice!(range).to_i
 
   end
 
