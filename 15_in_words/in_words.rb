@@ -36,6 +36,12 @@ module Inwords
     s = to_s
     result = ""
     temp = s.slice!(range).to_i
+    result << " #{temp.in_words}" unless temp.zero?
+    temp = s.to_i.in_words
+    result[0,0] = "#{temp} #{keyword}"
+
+    result
+
 
   end
 
