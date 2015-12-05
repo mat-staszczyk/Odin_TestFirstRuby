@@ -1,6 +1,16 @@
 module Inwords
 
 	def in_words
+    res = ""
+    case s_len = to_s.length
+      when 0..2 then res << teens
+      when 3 then res << more_digits((-2..-1),"hundred")
+      when 4..6 then res << more_digits((-3..-1),"thousand")
+      when 7..9 then res << more_digits((-6..-1),"million")
+      when 10..12 then res << more_digits((-9..-1),"billion")
+      when 13..15 then res << more_digits((-12..-1),"trillion")
+      else res = "Out of range."
+    end
 
 	end
 
