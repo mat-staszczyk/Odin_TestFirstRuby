@@ -11,6 +11,8 @@ module Inwords
       when 13..15 then res << more_digits((-12..-1),"trillion")
       else res = "Out of range."
     end
+    res = "Out of range." if self < 0
+    res
 
 	end
 
