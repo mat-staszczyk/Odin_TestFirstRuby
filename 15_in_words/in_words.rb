@@ -1,6 +1,7 @@
 module Inwords
 
 	def in_words
+
     res = ""
     case s_len = to_s.length
       when 0..2 then res << teens
@@ -54,7 +55,10 @@ module Inwords
 
     result
 
-
   end
 
+end
+
+class Fixnum
+  include Inwords
 end
