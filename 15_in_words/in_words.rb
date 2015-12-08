@@ -62,3 +62,7 @@ end
 class Fixnum
   include Inwords
 end
+
+class Bignum
+  include Inwords
+end
