@@ -27,7 +27,7 @@ module Inwords
     						 eigh nine ].to_a
 
     num = self.to_s
-    
+
     if (0..9).include? self then
       ones[self]
     else
@@ -44,8 +44,8 @@ module Inwords
 
   end
 
-  def more_digits
-    
+  def more_digits range, keyword
+
     s = to_s
     result = ""
     temp = s.slice!(range).to_i
